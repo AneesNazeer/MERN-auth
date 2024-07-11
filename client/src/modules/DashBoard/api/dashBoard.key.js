@@ -1,0 +1,1 @@
+export const GET_DASHBOARD_LIST = "GET_DASHBOARD_LIST";

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-image: url("https://w0.peakpx.com/wallpaper/985/489/HD-wallpaper-premium-abstract-black-background-with-line-stripes-pattern-dynamic-tech-graphic-banner-design-vector-corporate-background.jpg");
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+}
+
+.wrapper p {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.form {
+  padding: 1.5rem;
+  flex-basis: 100vw;
+  background-color: #9593935e;
+  color: #e8f0fe;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+.form .heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin: 1.25rem 0 1rem 0;
+}
+
+.form input {
+  height: 40px;
+  width: 100%;
+  padding: 15px;
+  background-color: #f1f9ff;
+  border: 2px solid #bce0fd;
+  border-radius: 8px;
+}
+
+.form button {
+  height: 40px;
+  width: 100%;
+  background-color: #1b1919;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+@media (min-width: 542px) {
+  .wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+  }
+  .form {
+    flex-basis: auto;
+  }
+  .form input {
+    width: 250px;
+  }
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.form p a {
+  color: #fff;
+}
+
+.table-pagination-label {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  background-color: #eee;
+}
+
+.pagination-buttons button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
